@@ -15,16 +15,16 @@ a {
 }
 
 body {
-  font-size: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #1f1f1f;
 }
 
-.contenedor {
+.container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-#top {
+.header {
   background-image: url(bg.jpg);
   background-position: center top;
   background-repeat: no-repeat;
@@ -45,6 +45,13 @@ body {
   z-index: 1000;
 }
 
+.logo {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
 .menu .navbar ul li {
   position: relative;
   float: left;
@@ -61,17 +68,29 @@ body {
   color: #1F618D;
 }
 
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
 .header-txt {
   text-align: center;
   margin-bottom: 45px;
-  padding: 100px 0;
 }
 
 .header-txt h1, span, h3 {
   font-size: 110px;
   letter-spacing: 5px;
   text-transform: uppercase;
-  font-family: "Bebas Neue", cursive;
+  font-family: 'Bebas Neue', cursive;
   color: #1F618D;
   margin-bottom: 15px;
 }
@@ -94,20 +113,19 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 20px;
-  font-family: "Bebas Neue", cursive;
+  font-family: 'Bebas Neue', cursive;
   margin: 25px 0;
   border: 0;
 }
 
 .btn-1:hover {
-  background-color: #110d49;
+  background-color: aqua;
 }
 
 .header-dir {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  margin-top: 20px;
 }
 
 .dir h3 {
@@ -120,22 +138,23 @@ body {
   text-transform: uppercase;
 }
 
-.bienvenidos {
+.welcome {
   display: flex;
 }
 
-.bienvenidos-1 {
-  background-image: url(./a1.jpg);
-  background-position: center;
+.welcome-1 {
+  background-image: url(a1.jpg);
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 50%;
 }
 
-.bienvenidos-2 {
+
+.welcome-2 {
   width: 50%;
   padding: 150px 250px 150px 100px;
-  background-color: #191919;
+  background-color: #1f1f1f;
 }
 
 h2 {
@@ -143,9 +162,8 @@ h2 {
   line-height: 100px;
   color: #ffffff;
   text-transform: uppercase;
-  font-family: "Bebas Neue", cursive;
+  font-family: 'Bebas Neue', cursive;
   margin-bottom: 20px;
-  text-align: center;
 }
 
 p {
@@ -154,109 +172,91 @@ p {
   margin: 25px 0;
 }
 
-.texto-color {
-  color: #1F618D;
-}
-
-/*FIN DE INICIO*/
-/*PRINICIPIO DE SERVICIOS */
-.servicios {
+.services {
   padding: 100px 0;
   text-align: center;
 }
 
-.servicios-txt {
+.services-txt {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.dls {
-  font-size: 22px;
-}
-
-.servicios-txt p {
+.services-txt p {
   padding: 50px 150px;
 }
 
-.servicios-group {
+.services-group {
   display: flex;
   justify-content: space-between;
   margin: 45px 0;
 }
 
-.servicios-1 {
-  background-color: #080442;
+.services-1 {
+  background-color: #000000;
   padding: 35px 25px;
   margin: 0 10px;
   border-radius: 15px;
 }
 
-.servicios-1 h3 {
+.services-1 h3 {
   font-size: 25px;
-  color: #1F618D;
-}
-
-/*FIN DE SERVICIOS*/
-/*PRINICIPIO DE PRECIOS */
-.precios {
-  display: flex;
-}
-
-.precios-1 {
-  width: 50%;
-  padding: 150px 250px 150px 100px;
-  background-color: #080442;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px;
-}
-
-strong {
-  font-family: "Bebas Neue", cursive;
   color: #ffffff;
 }
 
-.precios-3 {
-  color: #1F618D;
-  padding-bottom: 15px;
-  font-size: 20px;
+
+.prices {
+  display: flex;
 }
 
-.precios-2 {
-  background-image: url(./a2.jpg);
+.prices-1 {
+  width: 50%;
+  padding: 150px 250px 150px 100px;
+  background-color: #1F618D;
+}
+
+table {
+  margin: 50px 0;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+tr {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #afafaf;
+  margin-bottom: 20px;
+}
+
+th{
+  color: #ffffff;
+  padding-bottom: 15px;
+}
+
+td {
+  color: #1F618D;
+}
+
+.prices-2 {
+  background-image: url(a2.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 50%;
 }
 
-/*FIN DE PRECIOS*/
-/*PRINICIPIO DE NOSOTROS */
-.conocenos-1, .conocenos-2, .conocenos-3 {
-  color: #1F618D;
-  font-size: 80px;
-  text-align: center center;
-  font-family: "Bebas Neue", cursive;
-}
-
-.nosotros {
-  font-size: 25px;
+.footer-bg {
+  background-image: url(bg-2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
-  border-bottom: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  padding: 100px 0;
 }
 
-/*FIN DE NOSOTROS*/
-form {
+form{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -264,93 +264,154 @@ form {
 
 .campo-1 {
   margin-bottom: 15px;
-  align-items: center;
 }
 
 .campo {
   margin: 5px;
   padding: 20px 15px;
   width: 250px;
-  background-color: #080442;
+  background-color: #000000;
   border: 1px solid #1F618D;
   outline: none;
   border-radius: 10px;
-  color: #ffffff;
+  color:#ffffff;
   font-size: 14px;
 }
 
 textarea {
-  width: 520px !important;
+  width: 520px !important; 
 }
 
-.header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  margin: 10px;
-  max-width: 80px;
-}
-
-footer {
-  background-color: rgba(51, 51, 51, 0);
-  color: #fff;
+.footer-txt {
   text-align: center;
-  padding: 10px 0;
+  padding: 30px;
+  background-color: #000000;
 }
 
-.mi-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-}
-
-.mi-footer p {
-  margin: 0;
-}
-
-.mi-footer .container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.burger-menu {
-  display: none;
-  cursor: pointer;
-  padding: 10px;
-}
-
-.burger-menu div {
-  width: 25px;
-  height: 3px;
-  background-color: #ffffff;
-  margin: 6px 0;
-}
-
-/* Estilos específicos para dispositivos más pequeños utilizando media query */
-@media only screen and (max-width: 600px) {
-  nav ul {
-    display: none;
-    flex-direction: column;
-    background-color: #ffffff;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
+@media(max-width:991px) {
+  .menu {
     padding: 20px;
   }
-  nav ul li {
-    margin: 10px 0;
+
+  .menu label {
+    display: initial;
   }
-  .burger-menu {
-    display: block;
+
+  .menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #1f1f1f;
+    display: none;
+  }
+
+  .menu .navbar ul li {
+    width: 100%;
+  }
+
+  #menu:checked ~ .navbar {
+    display: initial;
+  }
+
+  .header {
+    min-height: 0;
+  }
+
+  .header-content {
+    padding: 80px 30px 50px 30px;
+  }
+
+  .header-txt {
+    margin-bottom: 15px;
+  
+  }
+
+  .header-txt h1 {
+    font-size: 90px;
+  }
+
+  .header-txt p {
+    padding: 0;
+    margin: 15px 0;
+  }
+
+  .header-dir {
+    flex-direction: column;
+
+  }
+
+  .dir p {
+    font-size: 18px;
+  }
+
+  .welcome{
+    flex-direction: column;
+  }
+
+  .welcome-1 {
+    display: none;
+  }
+
+  .welcome-2 {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 70px;
+    line-height: 80px;
+  }
+
+  p {
+    margin: 15px 0;
+  }
+
+  .services {
+    padding: 70px;
+  }
+
+  .services-txt p {
+    padding: 0;
+  }
+
+  .services-group {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .services-1 {
+    margin: 0 0 20px 0;
+  }
+
+  .prices {
+    flex-direction: column
+  }
+
+  .prices-1 {
+    width: 100%;
+    padding: 70px;
+    text-align: center;
+  }
+
+  table {
+    margin: 25px 0 0 0;
+  }
+
+  .prices-2 {
+    display: none;
+  }
+
+  .footer-bg {
+    padding: 70px;
+  }
+
+  textarea {
+    width: 250px !important;
   }
 }
 
+
 /*# sourceMappingURL=style.css.map */
+

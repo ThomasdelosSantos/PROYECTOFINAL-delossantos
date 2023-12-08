@@ -10,29 +10,26 @@
 </head>
 
 <body>
-    <header id="top">
+    <header id="header">
 
-        <div class="menu contenedor">
+        <div class="menu container">
 
-            <header class="header-logo">
-                <img src="./img/logo.png" alt="Logo de la empresa" class="logo">
-            </header>
+            <a href="#" class="logo">Barberia DLS</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="css/menu.png" class="menu-icono" alt>
+            </label>
             <nav class="navbar">
                 <ul>
                     <li><a href="./index.html">Inicio</a></li>
                     <li><a href="./servicios.html">Servicios</a></li>
                     <li><a href="./precios.html">Precios</a></li>
-                    <li><a href="./nosotros.html">Nosotros</a></li>
                     <li><a href="./reservar.html">Reserva tu cita</a></li>
                 </ul>
             </nav>
-            <div class="burger-menu" onclick="toggleMenu()">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
+
         </div>
-        <div class="header-txt">
+        <div class="footer-bg">
             <h2>Reserva tu cita</h2>
 
             <form>
@@ -49,5 +46,11 @@
             </form>
         </div>
     </div>
+
+    <footer class="footer-txt">
+        <p>
+            ©DLSBARBERSHOP 2023
+        </p>
+    </footer>
 </body>
 </html>
